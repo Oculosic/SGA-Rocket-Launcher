@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rocket Launcher</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div id="overlay"></div>
+        <div class="container">
+            <div class="persistant">
+                <h1>Rocket Launcher</h1>
+                <button id="connect" class="bigButton" onclick="toggleConnect(this)">Connect</button>
+            </div>
+            <div class="timerContainer">
+                <div>
+                    <div class="upper">
+                        <button class="increment" onclick="incrementTime('minutes', 10)">+</button>
+                        <button class="increment" onclick="incrementTime('minutes', 1)">+</button>
+                    </div>
+                    <h2 id="minutes">01</h2>
+                    <div class="lower">
+                        <button class="increment" onclick="incrementTime('minutes', -10)">-</button>
+                        <button class="increment" onclick="incrementTime('minutes', -1)">-</button>
+                    </div>
+                </div>
+                <h2>:</h2>
+                <div>
+                    <div class="upper">
+                        <button class="increment" onclick="incrementTime('seconds', 10)">+</button>
+                        <button class="increment" onclick="incrementTime('seconds', 1)">+</button>
+                    </div>
+                    <h2 id="seconds">60</h2>
+                    <div class="lower">
+                        <button class="increment" onclick="incrementTime('seconds', -10)">-</button>
+                        <button class="increment" onclick="incrementTime('seconds', -1)">-</button>
+                    </div>
+                </div>
+                <h2>.</h2>
+                <div>
+                    <div class="upper">
+                        <button class="increment" onclick="incrementTime('centiseconds', 10)">+</button>
+                        <button class="increment" onclick="incrementTime('centiseconds', 1)">+</button>
+                    </div>
+                    <h2 id="centiseconds">10</h2>
+                    <div class="lower">
+                        <button class="increment" onclick="incrementTime('centiseconds', -10)">-</button>
+                        <button class="increment" onclick="incrementTime('centiseconds', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="chooser">
+                <button id="rocket1" onclick="toggleRocket(this)" class="chooserButton CBhoverable buttonL active">Rocket 1</button>
+                <button id="rocket2" onclick="toggleRocket(this)" class="chooserButton CBhoverable buttonR">Rocket 2</button>
+            </div>
+            <button class="bigButton" onclick="toggleLaunch(this)">Launch</button>
+        </div>
+    </body>
+</html>

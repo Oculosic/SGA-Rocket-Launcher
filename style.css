@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    background: #2e2c2b;
+    color: #de3218;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    padding: 0;
+    font-size: 3rem;
+    margin: 20px 0 0 0;
+}
+h2{
+    display: inline-block;
+    margin: 0;
+}
+button{
+    font-size: 1rem;
+    border-radius: 3px;
+    color: #2e2c2b;
+    background: #de3218;
+    border: none;
+    padding: 5px;
+    outline: none;
+}
+button:hover{
+    background: #ee624d;
+}
+.persistant{
+    z-index: 2;
+    position: relative;
+}
+.bigButton{
+    padding: 10px;
+    margin: 30px 0 0 0;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    width: 12rem;
+}
+#overlay{
+    width: 100vw;
+    height: 100vh;
+    background: #30303086;
+    z-index: 1;
+    margin: 0;
+    position: absolute;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.persistant{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.chooser{
+    display: flex;
+    flex-direction: row;
+}
+.chooser button{
+    color: #de3218;
+    background: #2e2c2b;
+    border: 2px solid #de3218;
+    margin: 0;
+    display: block;
+}
+.chooser .active{
+    color: #2e2c2b;
+    background: #de3218;
+}
+.CBhoverable:not(.active):hover{
+    background: #ee624d;
+    border-color: #ee624d;
+    color: #2e2c2b;
+}
+.buttonL{
+    border-radius: 3px 0 0 3px;
+}
+.buttonR{
+    border-radius: 0 3px 3px 0;
+}
+.timerContainer{
+    max-width: 100%;
+    margin: 30px 0 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+}
+.upper, .lower{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.upper button{
+    border-radius: 50% 50% 3px 3px;
+}
+.lower button{
+    border-radius: 3px 3px 50% 50%;
+}
+.timerContainer button{
+    font-weight: bold;
+    margin: 0 5% 0 5%;
+    width: 40%;
+}
